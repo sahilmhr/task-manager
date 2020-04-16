@@ -68,7 +68,8 @@ tr:nth-child(even){
     color: green;
 }
 .c{
-    margin:10px auto;
+    margin:10% auto;
+    text-align: center;
 }
 .task-item{
     text-transform: uppercase;
@@ -100,6 +101,7 @@ tr:nth-child(even){
     text-transform: uppercase;
     color: antiquewhite;
     margin: 12px 0;
+    cursor: pointer;
 }
 .popup{
     height: 72%;
@@ -114,11 +116,12 @@ tr:nth-child(even){
     background-color: antiquewhite;
 }
 
-#cross{
+.cross{
     font-size: 25px;
     margin: 5%;
     color: #cd5c5c;
     float: right;
+    cursor: pointer;
 }
 #cross:hover{
     cursor: pointer;
@@ -144,4 +147,8 @@ tr:nth-child(even){
     text-transform: uppercase;
     margin: 0 auto;
     color: #cd5c5c;
+}
+
+.click{
+    cursor: pointer;
 }

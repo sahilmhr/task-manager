@@ -23,8 +23,8 @@ const Task = db.define('task', {
         allowNull : false
     },
     status : {
-        type : Sequelize.BOOLEAN,
-        defaultValue : false
+        type : Sequelize.STRING(20),
+        defaultValue : 'Incomplete'
     },
     priority:{
         type : Sequelize.STRING(10),

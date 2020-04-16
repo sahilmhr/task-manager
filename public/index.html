@@ -11,11 +11,11 @@
         <div class="header">
             <span id="title">Task Manager </span>
         </div>
-        <form class="tasks" action="" method="POST">
+        <div class="tasks">
             <span class="task-item">title</span>
             <input class="task-form" required type="text" name="title" id="t"><br>
             <span class="task-item">description</span>
-            <input class="task-form" type="text" name="description" id="description"><br>
+            <input class="task-form" type="text" name="desc" id="description"><br>
             <span class="task-item">due date</span>
             <input class="task-form" required placeholder="Due Date" type="date" name="due" id="due"><br>
             <span class="task-item">Select Priority</span><br>
@@ -24,17 +24,19 @@
                 <option selected value="Medium">Medium</option>
                 <option value="High">High</option>
             </select>
-            <button class="btn">add new task</button>
-        </form>
-        <table>
+            <button type="button" onclick="formData()" class="btn">add new task</button>
+        </div>
+        <span style="font-size: 20px;" class="task-item">Click on date to see the notes</span>
+        <table id="table">
             <thead>
                 <tr>
-                    <th>Due Date</th>
+                    <th onclick="sortTable(0)">Due Date</th>
                     <th>Title</th>
                     <th>Description</th>
-                    <th>Priority</th>
-                    <th>Status</th>
+                    <th onclick="sortTable(3)">Priority</th>
+                    <th onclick="sortTable(4)">Status</th>
                     <th>Edit</th>
+                    <th>Details</th>
                 </tr>
             </thead>
             <tbody id="tbody">
@@ -44,5 +46,6 @@
     <script src="js/dom.js"></script>
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/f97ff5e185.js" crossorigin="anonymous"></script>
+    <script src="js/requests.js"></script>
 </body>
 </html>
