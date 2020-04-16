@@ -38,43 +38,6 @@
                 </tr>
             </thead>
             <tbody id="tbody">
-                <!-- <% tasks.forEach((task) => { %>
-                    <% if (task !== null) { %>
-                        <div id="pop<%= task.id %>" class="popup">
-                            <i id="cross" onclick="hide(`<%= task.id %>`)" class="fa fa-close"></i>
-                            <div class="edit-form">
-                                <span class="edit-title">Edit Task #<%= task.id %></span><br><br>
-                                <span class="task-item">change due date</span>
-                                <input class="task-form" required placeholder="Due Date" type="date" id="due<%= task.id %>"><br>
-                                <span class="task-item">change Priority</span><br>
-                                <select class="task-form" name="priority" id="priority<%= task.id %>">
-                                    <option value="Low">Low</option>
-                                    <option selected value="Medium">Medium</option>
-                                    <option value="High">High</option>
-                                </select>
-                                <br>
-                                <span class="task-item">status</span><br>
-                                <select class="task-form" name="priority" id="status<%= task.id %>">
-                                    <option value="Incomplete">Incomplete</option>
-                                    <option value="Complete">Complete</option>
-                                </select>
-                                <button onclick="editForm(`<%= task.id %>`)" class="btn">add new task</button>
-                            </div>
-                        </div>
-                        <tr class="click">
-                            <td><%= task.due %></td>
-                            <td><%= task.title %></td>
-                            <td><%= task.description %></td>
-                            <td><%= task.priority %></td>
-                            <% if (task.status === false) {%>
-                            <td>Incomplete</td>
-                            <% } else { %>
-                            <td>Complete</td>
-                            <% } %>
-                            <td><a href="#"><i onclick="show(`<%= task.id %>`)" class="far ed fa-edit"></i></a></td>
-                        </tr>
-                    <% } %>
-                <% }) %> -->
             </tbody>
         </table>
     </div>

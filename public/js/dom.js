@@ -1,7 +1,11 @@
-function getDate(tasks){
+function getData(tasks){
     for (let i =1; i < tasks.length+1; i++){
         let date = document.getElementById(`due${i}`);
         date.value = tasks[i-1].due;
+        let priority = document.getElementById(`priority${i}`);
+        let status = document.getElementById(`status${i}`);
+        priority.value = tasks[i-1].priority;
+        status.value = tasks[i-1].status;
     }
 }
 
@@ -21,7 +25,7 @@ async function getTask(){
     "</select>"+
     "<br>"+
     "<span class='task-item'>status</span><br>"+
-    "<select class='task-form' name='priority' id='status"+i+"'>"+
+    "<select class='task-form' name='status' id='status"+i+"'>"+
         "<option value='Incomplete'>Incomplete</option>"+
         "<option value='Complete'>Complete</option>"+
     "</select>"+
@@ -37,7 +41,7 @@ async function getTask(){
 "<td><a href='#'><i onclick='show("+i+")' class='far ed fa-edit'></i></a></td>"+
 "</tr>"
     }
-    getDate(tasks);
+    getData(tasks);
     return tasks;
 }
 
