@@ -1,0 +1,147 @@
+body{
+    font-family: 'Helvetica';
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 70px;
+    background-color: #cd5c5c;
+    line-height: 70px;
+    text-align: center;
+}
+#title{
+    font-size: 40px;
+    color: antiquewhite;
+    font-weight: 530;
+}
+.tasks{
+    margin: 2% auto;
+    width: 36%;
+}
+.tasks>input[type="text"]::placeholder{
+    font-size: 16px;
+    font-weight: 200;
+    padding: 0 5px;
+}
+.tasks>input[type="text"]{
+    height: 30px;
+    width: 450px;
+    line-height: 30px;
+    margin-bottom: 1%;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+}
+.tasks>input[type="date"]{
+    height: 30px;
+    width: 450px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+}
+table{
+    width: 100%;
+    table-layout: auto;
+    margin-top: 5%;
+    border-collapse: collapse;
+}
+thead{
+    color: #cd5c5c;
+    background-color: antiquewhite;
+}
+tbody{
+    margin-top: 1%;
+}
+tr{
+    height: 40px;
+}
+td{
+    text-align: center;
+}
+table, th, td{
+    border: 1px solid #dedede;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.ed{
+    color: green;
+}
+.c{
+    margin:10px auto;
+}
+.task-item{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #929292;
+}
+.task-form{
+    height: 30px;
+    width: 450px;
+    line-height: 30px;
+    margin-bottom: 1%;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    margin: 12px 0;
+    background-color: #f2f2f2;
+}
+#priority{
+    width: 453px;
+    height: 33px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+}
+.btn{
+    width: 453px;
+    height: 33px;
+    border: none;
+    border-radius: 5px;
+    background-color: #cd5c5c;
+    text-transform: uppercase;
+    color: antiquewhite;
+    margin: 12px 0;
+}
+.popup{
+    height: 72%;
+    width: 40%;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    position: fixed;
+    margin: auto;
+    bottom: 8%;
+    display: none;
+    left: 30%;
+    background-color: antiquewhite;
+}
+
+#cross{
+    font-size: 25px;
+    margin: 5%;
+    color: #cd5c5c;
+    float: right;
+}
+#cross:hover{
+    cursor: pointer;
+}
+.editable{
+    margin: 5% 1%;
+    width: 100%;
+}
+.edit-form{
+    height: 100%;
+    width: 100%;
+    margin: 15% 0%;
+    text-align: center;
+}
+.edit-form>input{
+    background-color: white;
+}
+.edit-form>select{
+    background-color: white;
+}
+.edit-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: #cd5c5c;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span id="title">Task Manager </span>
+        </div>
+        <form class="tasks" action="" method="POST">
+            <span class="task-item">title</span>
+            <input class="task-form" required type="text" name="title" id="t"><br>
+            <span class="task-item">description</span>
+            <input class="task-form" type="text" name="description" id="description"><br>
+            <span class="task-item">due date</span>
+            <input class="task-form" required placeholder="Due Date" type="date" name="due" id="due"><br>
+            <span class="task-item">Select Priority</span><br>
+            <select class="task-form" name="priority" id="priority">
+                <option value="Low">Low</option>
+                <option selected value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button class="btn">add new task</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Due Date</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- <% tasks.forEach((task) => { %>
+                    <% if (task !== null) { %>
+                        <div id="pop<%= task.id %>" class="popup">
+                            <i id="cross" onclick="hide(`<%= task.id %>`)" class="fa fa-close"></i>
+                            <div class="edit-form">
+                                <span class="edit-title">Edit Task #<%= task.id %></span><br><br>
+                                <span class="task-item">change due date</span>
+                                <input class="task-form" required placeholder="Due Date" type="date" id="due<%= task.id %>"><br>
+                                <span class="task-item">change Priority</span><br>
+                                <select class="task-form" name="priority" id="priority<%= task.id %>">
+                                    <option value="Low">Low</option>
+                                    <option selected value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                </select>
+                                <br>
+                                <span class="task-item">status</span><br>
+                                <select class="task-form" name="priority" id="status<%= task.id %>">
+                                    <option value="Incomplete">Incomplete</option>
+                                    <option value="Complete">Complete</option>
+                                </select>
+                                <button onclick="editForm(`<%= task.id %>`)" class="btn">add new task</button>
+                            </div>
+                        </div>
+                        <tr class="click">
+                            <td><%= task.due %></td>
+                            <td><%= task.title %></td>
+                            <td><%= task.description %></td>
+                            <td><%= task.priority %></td>
+                            <% if (task.status === false) {%>
+                            <td>Incomplete</td>
+                            <% } else { %>
+                            <td>Complete</td>
+                            <% } %>
+                            <td><a href="#"><i onclick="show(`<%= task.id %>`)" class="far ed fa-edit"></i></a></td>
+                        </tr>
+                    <% } %>
+                <% }) %> -->
+            </tbody>
+        </table>
+    </div>
+    <script src="js/dom.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/f97ff5e185.js" crossorigin="anonymous"></script>
+</body>
+</html>
